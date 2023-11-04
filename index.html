@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookpal</title>
+    <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menuOpenBtn" class="hamberger-menu-btn" style="display: none;">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- hamberger-menu-div -->
+            <div class="menu-div">
+                <div style="display: flex; gap: 5px;">
+                    <button id="menuCloseBtn" class="hamberger-menu-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="menu-head">
+                        <img src="./Assets/Cookpal-logo.svg" alt="logo" width="80px">
+                        <img src="./Assets/profile.svg" alt="profile" width="40px" height="40px">
+                    </div>
+                </div>
+                <ul class="menu-links">
+                    <li>Home</li>
+                    <li>Explore</li>
+                    <li>Help</li>
+                </ul>  
+            </div>
+            <div class="logo">
+                <img src="./Assets/Cookpal-logo.svg" alt="logo">
+            </div>
+            <div class="nav-links-pic">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+                <div class="profile-div">
+                    <img src="./Assets/profile.svg" alt="profile" width="45px" height="45px">
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <img src="./Assets/mobile-banner.png" class="mobile-banner" style="display: none;" alt="banner">
+            <img src="./Assets/pc-banner.png" class="pc-banner" alt="banner">
+            <div class="banner-text">
+                <h3>Trending now</h3>
+                <h1>Mike’s famous salad with cheese</h1>
+                <p>By John Mike</p>
+            </div>
+        </div>
+    </header>
+    <section class="search-div">
+        <h1>Search for recipes</h1>
+        <div class="searchbar">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ADADAD;"></i>
+            <input type="text" id="searchInput" name="search" placeholder="Search for recipes...">
+            <button><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+        </div>
+    </section>
+    <section class="recipe-category">
+        <div id="allCategory" class="all-recipe">
+            <p>All Recipes</p>
+            <span><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></i></span>
+        </div>
+        <div id="vegCategory" class="veg-recipe">
+            <p>Veg Recipes</p>
+            <span><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></i></span>
+        </div>
+        <div id="nonVegCategory" class="non-veg-recipe">
+            <p>Non Veg Recipes</p>
+            <span><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></i></span>
+        </div>
+    </section>
+    <section class="main-container">
+        <div class="filter-menu">
+            <h1>Filters</h1>
+            <h3>Rating</h3>
+            <div class="checkbox-div">
+                <div>
+                    <input type="checkbox" id="check1" name="check-1" class="checkbox">
+                <label for="check1">4 and Above</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="check2" name="check-2" class="checkbox">
+                <label for="check2">Below 4</label>
+                </div>
+            </div>
+        </div>
+        <div id="food-container" class="dish-menu">
+            <!-- dynamic card -->
+        </div>
+    </section>
+    <footer>
+        <section class="footer-info">
+            <div class="about">
+                <div>
+                    <img src="./Assets/Cookpal-logo.svg"/>
+                </div>
+                <p>Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function. Join our community and let's cook together!</p>
+            </div>
+            <div class="more-links">
+                <ul>
+                    <li class="list-head">Company</li>
+                    <li>Home</li>
+                    <li>Explore</li>
+                    <li>Team</li>
+                    <li>About us</li>
+                    <li>Activity</li>
+                </ul>
+                <ul>   
+                    <li class="list-head">Resources</li>
+                    <li>Blog</li>
+                    <li>Use Cases</li>
+                    <li>Testimonials</li>
+                    <li>Insights</li>
+                </ul>
+            </div>
+            <div class="suscribe-div">
+                <div>
+                    <img src="./Assets/Cookpal-logo.svg">
+                </div>
+                <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>
+                <div class="input-btn">
+                    <div class="suscribe-input">
+                        <input type="email" placeholder="Your Email">
+                        <i class="fa-solid fa-at"></i>
+                    </div>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <section class="social-links">
+            <a href="#"><div class="icon"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></div></a>
+            <a href="#"><div class="icon"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></div></a>
+            <a href="https://www.linkedin.com/in/naveen-kr09/" target="_blank"><div class="icon"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></div></a>
+            <a href="#"><div class="icon"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></div></a>
+        </section>
+        <div class="developer">Made with ❤️ by Naveen kumar</div>
+    </footer>
+    <!-- script js -->
+    <script src="script.js"></script>
+    <script src="hambergerMenu.js"></script>
+    <script src="feature.js"></script>
+</body>
+</html>
